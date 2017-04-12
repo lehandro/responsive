@@ -26,6 +26,14 @@ body{
     }
 }
 */
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Oswald', sans-serif;
+}
+p{
+    font-family: 'Raleway', sans-serif;
+}
 
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
@@ -39,13 +47,49 @@ body{
 .col-10 {width: 83.33%;}
 .col-11 {width: 91.66%;}
 
-@media only screen and (max-width: 768px) {
- /* For mobile phones: */
+h1{
+    background-color: red
+}
+
+
+@media only screen and (max-width: 1200px) {
+ /* For desktop: */
  [class*="col-"] {
  width: 100%;
  }
 }
-.col-4{
-    float: right
+@media only screen and (min-width: 768px) {
+ /* For celular: */
+ [class*="pie"] {
+ width: 100%;
+ }
 }
 
+.col-2{
+    float: left;
+}
+.col-3{
+    float: left;
+}
+.col-4{
+    float: left
+}
+.col-5{
+    float: left
+}
+
+
+.pie{
+    background-color: black;
+    color: white;
+    float: left
+}
+body{
+    font-size: 16px
+}
+h2{
+    font-size: 1.5rem
+}
+h3{
+    font-size: 0.7em
+}
